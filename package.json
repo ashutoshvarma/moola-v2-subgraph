@@ -4,13 +4,13 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ dapplooker/moola-market-v2",
-    "create-local": "graph create --node http://localhost:8020/ dapplooker/moola-market-v2",
-    "remove-local": "graph remove --node http://localhost:8020/ dapplooker/moola-market-v2",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 dapplooker/moola-market-v2"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ ashutoshvarma/moola-v2-celo  --access-token $ACCESS_TOKEN" ,
+    "create-local": "graph create --node http://localhost:8020/ ashutoshvarma/moola-v2-celo",
+    "remove-local": "graph remove --node http://localhost:8020/ ashutoshvarma/moola-v2-celo",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 ashutoshvarma/moola-v2-celo"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "git+ssh://git@github.com/dapplooker/graph-cli-dlooker.git",
+    "@graphprotocol/graph-cli": "0.18.0",
     "@graphprotocol/graph-ts": "0.18.1"
   }
 }
